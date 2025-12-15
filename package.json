@@ -4,59 +4,59 @@
   "version": "0.1.0",
   "preview": true,
   "displayName": ".NET object browser",
-"description": "Visual Studio Code extension to browse namespaces and types in dotnet solution, including dependencies.",
-"author": {
-  "email": "webczat@outlook.com",
-  "name": "Michał Zegan"
-},
-"license": "MIT",
-"repository": {
-  "type": "git",
-  "url": "https://github.com/webczat/dotnet-object-browser.git"
-},
-"bugs": {
-  "url": "https://github.com/webczat/dotnet-object-browser/issues/"
-},
-"keywords": [
-  "dotnet",
-  "c#",
-  "dependencies",
-  "object-browser"
-],
-"categories": [
-  "Other"
-],
-"type": "module",
-"private": true,
-"extensionKind": [
-  "workspace"
-],
-"api": "none",
-"extensionDependencies": [
-  "ms-dotnettools.csharp"
-],
-"main": "dist/extension.js",
-"engines": {
-  "vscode": "^1.107.0"
-},
-"devDependencies": {
-  "typescript": "^5.9.3",
-  "@types/node": "^22.19.3",
-  "eslint": "^9.39.2",
-  "@eslint/js": "^9.39.2",
-  "typescript-eslint": "^8.49.0",
-  "eslint-plugin-simple-header": "^1.2.2",
-  "eslint-plugin-mocha": "^11.2.0",
-  "globals": "^16.5.0",
-  "prettier": "^3.7.4",
-  "@types/vscode": "^1.107.0",
-  "@vscode/test-electron": "^2.5.2",
-  "@vscode/test-cli": "^0.0.12",
-  "@vscode/vsce": "^3.7.2-1",
-  "rollup": "^4.53.4",
-  "@rollup/plugin-commonjs": "^29.0.0",
-  "@rollup/plugin-node-resolve": "^16.0.3",
-  "@rollup/plugin-swc": "^0.4.0",
-  "@rollup/plugin-terser": "^0.4.4"
-}
+  "description": "Visual Studio Code extension to browse namespaces and types in dotnet solution, including dependencies.",
+  "author": {
+    "email": "webczat@outlook.com",
+    "name": "Michał Zegan"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webczat/dotnet-object-browser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/webczat/dotnet-object-browser/issues/"
+  },
+  "keywords": [
+    "dotnet",
+    "c#",
+    "dependencies",
+    "object-browser"
+  ],
+  "categories": [
+    "Other"
+  ],
+  "type": "module",
+  "private": true,
+  "extensionKind": [
+    "workspace"
+  ],
+  "api": "none",
+  "extensionDependencies": [
+    "ms-dotnettools.csharp"
+  ],
+  "main": "dist/extension.js",
+  "engines": {
+    "vscode": "^1.107.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@types/node": "^22.19.3",
+    "eslint": "^9.39.2",
+    "@eslint/js": "^9.39.2",
+    "typescript-eslint": "^8.49.0",
+    "eslint-plugin-simple-header": "^1.2.2",
+    "eslint-plugin-mocha": "^11.2.0",
+    "globals": "^16.5.0",
+    "prettier": "^3.7.4",
+    "@types/vscode": "^1.107.0",
+    "@vscode/test-electron": "^2.5.2",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/vsce": "^3.7.2-1",
+    "rollup": "^4.53.4",
+    "@rollup/plugin-commonjs": "^29.0.0",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-swc": "^0.4.0",
+    "@rollup/plugin-terser": "^0.4.4"
+  }
 }

@@ -1,8 +1,8 @@
 {
   "name": "dotnet-object-browser-env",
-"build": {
-  "dockerfile": "Dockerfile"
-},
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
   "remoteUser": "vscode",
   "updateRemoteUserUID": true,
   "mounts": [
