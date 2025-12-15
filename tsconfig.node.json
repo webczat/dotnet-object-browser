@@ -4,6 +4,7 @@
   "compilerOptions": {
     "composite": true,
     "allowJs": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "noEmit": true
   }
 }
