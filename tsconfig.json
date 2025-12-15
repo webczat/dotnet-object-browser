@@ -2,6 +2,7 @@
   "include": [],
   "exclude": ["node_modules/**/*", "dist/**/*", "out/**/*"],
   "compilerOptions": {
+    "sourceMap": true,
     "useDefineForClassFields": true,
     "verbatimModuleSyntax": true,
     "strict": true,
