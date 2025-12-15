@@ -35,7 +35,18 @@
         "GitHub.vscode-github-actions",
         "tintoy.msbuild-project-tools",
         "ms-azuretools.vscode-containers"
-      ]
+      ],
+      "settings": {
+        "dotnet.backgroundAnalysis.analyzerDiagnosticsScope": "fullSolution",
+        "dotnet.backgroundAnalysis.compilerDiagnosticsScope": "fullSolution",
+        "csharp.debug.justMyCode": false,
+        "csharp.debug.symbolOptions.searchMicrosoftSymbolServer": true,
+        "csharp.debug.symbolOptions.searchNuGetOrgSymbolServer": true,
+        "csharp.debug.console": "internalConsole",
+        "dotnet.formatting.organizeImportsOnFormat": true,
+        "dotnet.navigation.navigateToSourceLinkAndEmbeddedSources": true,
+        "dotnet.symbolSearch.searchReferenceAssemblies": true
+      }
     }
   }
 }

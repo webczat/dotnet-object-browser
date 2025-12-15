@@ -1,0 +1,10 @@
+<Project>
+  <PropertyGroup>
+    <Deterministic>true</Deterministic>
+    <Nullable>Enable</Nullable>
+    <ImplicitUsings>Enable</ImplicitUsings>
+    <AnalysisMode>All</AnalysisMode>
+    <DisableRuntimeMarshalling>true</DisableRuntimeMarshalling>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+  </PropertyGroup>
+</Project>
