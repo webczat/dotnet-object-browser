@@ -50,6 +50,7 @@
     "globals": "^16.5.0",
     "prettier": "^3.7.4",
     "@types/vscode": "^1.107.0",
+    "@types/mocha": "^10.0.10",
     "@vscode/test-electron": "^2.5.2",
     "@vscode/test-cli": "^0.0.12",
     "@vscode/vsce": "^3.7.2-1",

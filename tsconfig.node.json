@@ -3,6 +3,7 @@
   "include": ["*.config.js", ".vscode-test.js"],
   "compilerOptions": {
     "composite": true,
-    "allowJs": true
+    "allowJs": true,
+    "skipLibCheck": true
   }
 }
