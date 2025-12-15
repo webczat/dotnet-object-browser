@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["*.config.js", ".vscode-test.js"],
+  "compilerOptions": {
+    "composite": true,
+    "allowJs": true
+  }
+}

@@ -6,5 +6,6 @@
   "json.format.enable": false,
   "prettier.requireConfig": true,
   "javascript.format.enable": false,
-  "typescript.format.enable": false
+  "typescript.format.enable": false,
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
