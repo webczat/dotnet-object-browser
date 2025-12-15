@@ -9,6 +9,7 @@
     "src=dotnet-object-browser-npm-cache,target=/home/vscode/.npm,type=volume",
     "src=dotnet-object-browser-nugets,target=/home/vscode/.nuget,type=volume"
   ],
+  "updateContentCommand": "npm install",
   "features": {
     "ghcr.io/devcontainers/features/common-utils": {},
     "ghcr.io/devcontainers/features/github-cli": {},
