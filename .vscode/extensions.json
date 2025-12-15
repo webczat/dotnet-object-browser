@@ -1,0 +1,14 @@
+{
+    "recommendations": [
+        "ms-dotnettools.csdevkit",
+        "editorconfig.editorconfig",
+        "dbaeumer.vscode-eslint",
+        "ms-vscode.extension-test-runner",
+        "github.vscode-github-actions",
+        "github.vscode-pull-request-github",
+        "prettier.prettier-vscode",
+        "redhat.vscode-xml",
+        "redhat.vscode-yaml",
+        "tintoy.msbuild-project-tools"
+    ]
+}

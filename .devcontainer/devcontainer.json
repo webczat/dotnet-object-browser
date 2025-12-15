@@ -28,11 +28,11 @@
         "GitHub.vscode-pull-request-github",
         "dbaeumer.vscode-eslint",
         "EditorConfig.EditorConfig",
-        "ms-dotnettools.csharp",
         "ms-dotnettools.csdevkit",
         "Prettier.prettier-vscode",
         "ms-vscode.extension-test-runner",
-        "GitHub.vscode-github-actions"
+        "GitHub.vscode-github-actions",
+        "tintoy.msbuild-project-tools"
       ]
     }
   }
