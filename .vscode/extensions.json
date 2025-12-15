@@ -9,6 +9,7 @@
         "prettier.prettier-vscode",
         "redhat.vscode-xml",
         "redhat.vscode-yaml",
-        "tintoy.msbuild-project-tools"
+        "tintoy.msbuild-project-tools",
+        "ms-azuretools.vscode-containers"
     ]
 }

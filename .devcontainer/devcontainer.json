@@ -32,7 +32,8 @@
         "Prettier.prettier-vscode",
         "ms-vscode.extension-test-runner",
         "GitHub.vscode-github-actions",
-        "tintoy.msbuild-project-tools"
+        "tintoy.msbuild-project-tools",
+        "ms-azuretools.vscode-containers"
       ]
     }
   }
