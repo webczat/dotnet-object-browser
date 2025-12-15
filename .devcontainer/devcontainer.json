@@ -1,21 +1,16 @@
 {
   "name": "dotnet-object-browser-env",
-"image": "ubuntu",
-  "remoteUser": "ubuntu",
+"build": {
+  "dockerfile": "Dockerfile"
+},
+  "remoteUser": "vscode",
   "updateRemoteUserUID": true,
   "mounts": [
-    "src=dotnet-object-browser-npm-cache,target=/home/ubuntu/.npm,type=volume",
-    "src=dotnet-object-browser-nugets,target=/home/ubuntu/.nuget,type=volume"
+    "src=dotnet-object-browser-npm-cache,target=/home/vscode/.npm,type=volume",
+    "src=dotnet-object-browser-nugets,target=/home/vscode/.nuget,type=volume"
   ],
-  "onCreateCommand": {
-    "permissions": "sudo chown -R ubuntu:ubuntu /home/ubuntu/.npm && sudo chown -R ubuntu:ubuntu /home/ubuntu/.nuget",
-    "packages": "sudo apt update && sudo apt install -y xvfb xdg-utils"
-  },
   "features": {
-    "ghcr.io/devcontainers/features/common-utils": {
-      "installSsl": true,
-      "upgradePackages": true
-    },
+    "ghcr.io/devcontainers/features/common-utils": {},
     "ghcr.io/devcontainers/features/github-cli": {},
     "ghcr.io/devcontainers/features/dotnet": {
       "version": "10.0"
