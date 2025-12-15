@@ -31,7 +31,8 @@
         "ms-dotnettools.csharp",
         "ms-dotnettools.csdevkit",
         "Prettier.prettier-vscode",
-        "ms-vscode.extension-test-runner"
+        "ms-vscode.extension-test-runner",
+        "GitHub.vscode-github-actions"
       ]
     }
   }
