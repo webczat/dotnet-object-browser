@@ -1,0 +1,10 @@
+{
+  "css.format.enable": false,
+  "less.format.enable": false,
+  "scss.format.enable": false,
+  "html.format.enable": false,
+  "json.format.enable": false,
+  "prettier.requireConfig": true,
+  "javascript.format.enable": false,
+  "typescript.format.enable": false
+}
