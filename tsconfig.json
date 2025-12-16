@@ -9,6 +9,7 @@
     "module": "esnext",
     "moduleResolution": "bundler",
     "esModuleInterop": true,
+    "moduleDetection": "force",
     "target": "es2022",
     "lib": ["es2022"],
     "types": ["node"],
