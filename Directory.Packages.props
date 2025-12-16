@@ -6,5 +6,7 @@
   <ItemGroup>
     <PackageVersion Include="xunit.v3.mtp-v2" Version="3.2.1"/>
     <PackageVersion Include="xunit.analyzers" Version="1.26.0"/>
+    <PackageVersion Include="Microsoft.CodeAnalysis.ExternalAccess.Extensions" Version="5.0.0-1.25277.114"/>
+    <PackageVersion Include="Microsoft.CodeAnalysis.Workspaces.Common" Version="5.0.0"/>
   </ItemGroup>
 </Project>

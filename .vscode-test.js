@@ -6,7 +6,7 @@
 import { defineConfig } from "@vscode/test-cli";
 
 export default defineConfig({
-    files: ["out/tests/**/*.js"],
+    files: ["out/tests/**/*.test.js"],
     platform: "desktop",
     version: "1.107.0",
     coverage: {
