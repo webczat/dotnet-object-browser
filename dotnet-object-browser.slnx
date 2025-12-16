@@ -1,2 +1,4 @@
 <Solution>
+    <Project Path="lsp-extension-tests/Webczat.DotnetObjectBrowser.Lsp.Tests.csproj" />
+    <Project Path="lsp-extension/Webczat.DotnetObjectBrowser.Lsp.csproj" />
 </Solution>

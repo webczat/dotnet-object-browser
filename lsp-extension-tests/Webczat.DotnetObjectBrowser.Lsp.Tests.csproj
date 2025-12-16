@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Webczat.DotnetObjectBrowser.Lsp</RootNamespace>
+    <UseMicrosoftTestingPlatformRunner>true</UseMicrosoftTestingPlatformRunner>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="xunit.v3.mtp-v2" />
+    <PackageReference Include="xunit.analyzers" PrivateAssets="All" ExcludeAssets="compile" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../lsp-extension/Webczat.DotnetObjectBrowser.Lsp.csproj" />
+  </ItemGroup>
+</Project>
