@@ -39,6 +39,9 @@
   "engines": {
     "vscode": "^1.107.0"
   },
+  "dependencies": {
+    "vscode-languageclient": "^9.0.1"
+  },
   "devDependencies": {
     "typescript": "^5.9.3",
     "@types/node": "^22.19.3",
