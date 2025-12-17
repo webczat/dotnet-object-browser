@@ -7,6 +7,11 @@ import * as vscode from "vscode";
 import { type PartialResultParams, ProtocolRequestType, RequestType } from "vscode-languageclient/node";
 
 /**
+ * Identifier of the C# extension.
+ */
+export const extensionId = "ms-dotnettools.csharp";
+
+/**
  * Represents possible language server states.
  */
 export enum ServerState {
