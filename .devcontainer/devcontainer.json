@@ -5,6 +5,7 @@
   },
   "remoteUser": "vscode",
   "updateRemoteUserUID": true,
+  "onCreateCommand": "sudo chown -R vscode:vscode /home/vscode",
   "mounts": [
     "src=dotnet-object-browser-npm-cache,target=/home/vscode/.npm,type=volume",
     "src=dotnet-object-browser-nugets,target=/home/vscode/.nuget,type=volume"
