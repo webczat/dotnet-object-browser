@@ -5,7 +5,8 @@
     <RootNamespace>Webczat.DotnetObjectBrowser.Lsp</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.CodeAnalysis.ExternalAccess.Extensions"/>
-    <PackageReference Include="Microsoft.CodeAnalysis.Workspaces.Common"/>
+    <PackageReference Include="Microsoft.CodeAnalysis.ExternalAccess.Extensions"
+      ExcludeAssets="Runtime" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Workspaces.Common" ExcludeAssets="Runtime" />
   </ItemGroup>
 </Project>
