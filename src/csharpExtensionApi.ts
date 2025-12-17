@@ -9,7 +9,7 @@ import { type PartialResultParams, ProtocolRequestType, RequestType } from "vsco
 /**
  * Identifier of the C# extension.
  */
-export const extensionId = "ms-dotnettools.csharp";
+export const EXTENSION_ID = "ms-dotnettools.csharp";
 
 /**
  * Represents possible language server states.
