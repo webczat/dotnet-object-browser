@@ -4,10 +4,10 @@
  */
 
 import type { Extension } from "vscode";
-import { type CSharpExtensionApi, EXTENSION_ID } from "../csharpExtensionApi";
+import { type BaseExtensionExports, EXTENSION_ID } from "../csharpExtensionApi";
 
 declare module "vscode" {
     namespace extensions {
-        function getExtension(extensionId: typeof EXTENSION_ID): Extension<CSharpExtensionApi>;
+        function getExtension(extensionId: typeof EXTENSION_ID): Extension<BaseExtensionExports | null>;
     }
 }

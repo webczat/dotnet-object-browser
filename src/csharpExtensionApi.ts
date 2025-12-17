@@ -62,39 +62,26 @@ export interface LanguageServerEvents {
 }
 
 /**
+ * Base interface for extension exports.
+ */
+export interface BaseExtensionExports {
+    /**
+     * Shows whether extension is in limited activation mode..
+     */
+    isLimitedActivation: boolean;
+}
+
+/**
  * Interface returned by C# extension when activated in limited mode (untrusted workspace).
  */
-export interface LimitedExtensionExports {
+export interface LimitedExtensionExports extends BaseExtensionExports {
     /**
      * Returns true, indicating the extension is in limited activation mode.
      */
     isLimitedActivation: true;
 }
 
-/**
- * Interface returned by C# extension when it's in omnisharp mode.
- * Note it's mostly a dummy interface that should not be used.
- */
-export interface OmnisharpExtensionExports {
-    /**
-     * Returns false, indicating the extension is not in limited activation mode.
-     */
-    isLimitedActivation: false;
-
-    /**
-     * Returns a promise that resolves when server initialization is completed.
-     * @returns The promise that resolves when initialization completes
-     */
-    initializationFinished: () => Promise<void>;
-
-    /**
-     * Returns the extension log directory.
-     * @returns The extension log directory
-     */
-    logDirectory: string;
-}
-
-export interface CSharpExtensionExports {
+export interface CSharpExtensionExports extends BaseExtensionExports {
     /**
      * Returns false, indicating the extension is not in limited activation mode.
      */
@@ -178,15 +165,10 @@ export interface CSharpExtensionExperimentalExports {
 }
 
 /**
- * Represents possible API variants C# extension can return.
- */
-export type CSharpExtensionApi = CSharpExtensionExports | OmnisharpExtensionExports | LimitedExtensionExports | null;
-
-/**
  * Check if extension is running in LSP mode and if we can use it's API.
  * @param api - The API object returned by extension
  * @returns true if the object represents extension in LSP mode
  */
-export function isLsp(api: CSharpExtensionApi): api is CSharpExtensionExports {
+export function isLsp(api: BaseExtensionExports | null): api is CSharpExtensionExports {
     return !!api && !api.isLimitedActivation && (api as CSharpExtensionExports).experimental !== undefined;
 }
