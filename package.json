@@ -63,5 +63,23 @@
     "@rollup/plugin-swc": "^0.4.0",
     "@rollup/plugin-terser": "^0.4.4",
     "concurrently": "^9.2.1"
-  }
+  },
+  "scripts": {
+    "typecheck": "tsc -b --noEmit",
+    "lint": "eslint",
+    "check_format": "prettier --check .",
+    "format": "prettier -w .",
+    "build": "npm run typecheck && rollup -c",
+    "build_tests": "tsc -b && rollup -c",
+    "build_production": "npm run lint && npm run typecheck && rollup -c --environment BUILD:production",
+    "vscode:prepublish": "npm run build_production",
+    "watch:tsc": "tsc -b -noEmit --watch",
+    "watch:rollup": "rollup -c --watch",
+    "watch_tests:tsc": "tsc -b --watch",
+    "watch_tests:rollup": "rollup -c --watch",
+    "watch": "concurrently npm:watch:*",
+    "watch_tests": "concurrently npm:watch_tests:*"
+  },
+  "activationEvents": [],
+  "contributes": {}
 }
