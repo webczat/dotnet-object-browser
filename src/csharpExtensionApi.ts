@@ -66,7 +66,7 @@ export interface LanguageServerEvents {
  */
 export interface BaseExtensionExports {
     /**
-     * Shows whether extension is in limited activation mode..
+     * Shows whether extension is in limited activation mode.
      */
     isLimitedActivation: boolean;
 }
@@ -81,6 +81,9 @@ export interface LimitedExtensionExports extends BaseExtensionExports {
     isLimitedActivation: true;
 }
 
+/**
+ * Interface for CSharp extension export in roslyn lsp mode.
+ */
 export interface CSharpExtensionExports extends BaseExtensionExports {
     /**
      * Returns false, indicating the extension is not in limited activation mode.
@@ -94,8 +97,7 @@ export interface CSharpExtensionExports extends BaseExtensionExports {
     initializationFinished: () => Promise<void>;
 
     /**
-     * Returns the extension log directory.
-     * @returns The extension log directory
+     * The extension log directory.
      */
     logDirectory: string;
 
@@ -106,8 +108,7 @@ export interface CSharpExtensionExports extends BaseExtensionExports {
     determineBrowserType: () => Promise<string | undefined>;
 
     /**
-     * Returns the experimental api.
-     * @returns The experimental api
+     * The experimental api.
      */
     experimental: CSharpExtensionExperimentalExports;
 
